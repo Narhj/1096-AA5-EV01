@@ -1,0 +1,14 @@
+# Dependencias instaladas (se regeneran con "npm install")
+node_modules/
+
+# Variables de entorno / credenciales locales
+.env
+.runtimeconfig.json
+
+# Logs
+*.log
+firebase-debug.log
+firebase-debug.*.log
+
+# Carpetas de cache del emulador de Firebase
+.firebase/

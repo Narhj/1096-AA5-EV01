@@ -1,0 +1,4 @@
+$kind: collection
+description: Coleccion para probar el servicio de registro e inicio de sesion. Ajusta {{base_url}} con la URL de tu funcion (emulador o desplegada).
+variables:
+  base_url: http://127.0.0.1:5001/practicefactureia/us-central1/api

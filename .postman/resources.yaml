@@ -1,0 +1,13 @@
+# Use this workspace to collaborate
+workspace:
+  id: c507d07f-21d7-4f8d-8e8f-45d741777051
+
+localResources:
+  collections:
+    - ../postman_collection.json
+
+# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
+
+cloudResources:
+  collections:
+    ../postman/collections/FactureAI - Registro y Login (GA7-220501096-AA5-EV01): 446b29ce-fd77-4e88-b5d2-03aa01629d59

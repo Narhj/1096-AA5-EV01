@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{base_url}}/login"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "usuario": "moises",
+      "password": "claveIncorrecta"
+    }
+order: 3000

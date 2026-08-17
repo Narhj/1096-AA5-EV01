@@ -1,0 +1,71 @@
+{
+  "info": {
+    "name": "FactureAI - Registro y Login (GA7-220501096-AA5-EV01)",
+    "description": "Coleccion para probar el servicio de registro e inicio de sesion. Ajusta {{base_url}} con la URL de tu funcion (emulador o desplegada).",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://127.0.0.1:5001/practicefactureia/us-central1/api"
+    }
+  ],
+  "item": [
+    {
+      "name": "Registrar usuario",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"usuario\": \"moises\",\n  \"password\": \"claveSegura123\"\n}"
+        },
+        "url": "{{base_url}}/register"
+      }
+    },
+    {
+      "name": "Login correcto",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"usuario\": \"moises\",\n  \"password\": \"claveSegura123\"\n}"
+        },
+        "url": "{{base_url}}/login"
+      }
+    },
+    {
+      "name": "Login con contrasena incorrecta",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"usuario\": \"moises\",\n  \"password\": \"claveIncorrecta\"\n}"
+        },
+        "url": "{{base_url}}/login"
+      }
+    },
+    {
+      "name": "Login con usuario inexistente",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"usuario\": \"noexiste\",\n  \"password\": \"cualquierClave\"\n}"
+        },
+        "url": "{{base_url}}/login"
+      }
+    }
+  ]
+}
